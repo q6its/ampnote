@@ -1,0 +1,2 @@
+# ampnote
+amplify app
