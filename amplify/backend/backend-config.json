@@ -25,5 +25,29 @@
         ]
       }
     }
+  },
+  "api": {
+    "ampnote": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "prjkey"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  },
+  "storage": {
+    "filestore": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
